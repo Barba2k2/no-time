@@ -33,7 +33,7 @@ const Header = () => {
               </Link>
             </div>
             <div className="">
-              <Button className="relative py-8 uppercase font-bold text-white text-xl bg-[#10BFCC] rounded-full">
+              <Button className="relative mt-1.5 py-8 uppercase font-bold text-white text-xl bg-[#10BFCC] rounded-full">
                 Publicar Projeto
               </Button>
             </div>
