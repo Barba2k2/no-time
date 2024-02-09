@@ -3,7 +3,7 @@
 import Image from "next/image";
 import { Button } from "./ui/button";
 import { Card, CardContent } from "./ui/card";
-import { Avatar, AvatarImage } from "@/app/_components/ui/avatar";
+import { Avatar, AvatarImage } from "./ui/avatar";
 
 const Body = () => {
   return (
@@ -39,7 +39,7 @@ const Body = () => {
                     src="/locker.png"
                     width={1000}
                     height={1000}
-                    style={{ }}
+                    style={{}}
                     alt="locker"
                   />
                 </Avatar>
