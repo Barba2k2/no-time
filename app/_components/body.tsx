@@ -4,13 +4,15 @@ import Image from "next/image";
 import { Button } from "./ui/button";
 import { Card, CardContent } from "./ui/card";
 import { Avatar, AvatarImage } from "./ui/avatar";
+import { Input } from "./ui/input";
+import { SearchIcon } from "lucide-react";
 
 const Body = () => {
   return (
     <div className="flex flex-col bg-[#FDFDFD]">
       <div className="flex flex-row w-full">
         <div className="flex flex-col ml-60 mt-52">
-          <h1 className="flex justify-center font-bold text-6xl">
+          <h1 className="justify-center font-bold text-6xl">
             Você tem procurado <br />
             por freelancers?
           </h1>
@@ -19,10 +21,23 @@ const Body = () => {
             ajuda a contratar freelancers de elite a qualquer <br />
             momento
           </p>
-          <div>
+          <div className="flex flex-row">
             <Button className="relative mt-8 py-8 uppercase font-bold text-white text-xl bg-[#10BFCC] rounded-xl">
               Publicar Projeto
             </Button>
+            <div className="flex flex-row w-full h-[100px] items-center space-x-2 mt-3.5 ml-3">
+              <Input
+                type="text"
+                placeholder="Procure trabalhos"
+                className="h-[65px] rounded-xl px-2 text-xl"
+              />
+              <Button
+                type="submit"
+                className="bg-[#10BFCC] mx-3 h-[60px] text-xl"
+              >
+                <SearchIcon size={35} />
+              </Button>
+            </div>
           </div>
         </div>
         <div className="absolute right-60 top-40">
